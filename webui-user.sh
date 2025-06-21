@@ -10,7 +10,7 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-#export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--xformers"
 
 # python3 executable
 #python_cmd="python3"
@@ -25,10 +25,10 @@
 #export LAUNCH_SCRIPT="launch.py"
 
 # install command for torch
-#export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
+export TORCH_COMMAND="pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128"
 
 # Requirements file to use for stable-diffusion-webui
-#export REQS_FILE="requirements_versions.txt"
+export REQS_FILE="requirements_versions.txt"
 
 # Fixed git repos
 #export K_DIFFUSION_PACKAGE=""
